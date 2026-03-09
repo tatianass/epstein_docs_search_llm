@@ -1,7 +1,7 @@
 # Epstein's documents search
 
-This is leisure project to search pdf files for specific information using LLMs and data from
-USA [government](https://www.justice.gov/epstein/doj-disclosures/data-set-12-files)
+This is a leisure project to search pdf files for specific information using LLMs and data from
+USA [government](https://www.justice.gov/epstein/doj-disclosures/data-set-12-files).
 
 # Requirements
 
