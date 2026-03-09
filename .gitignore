@@ -30,9 +30,6 @@ build/
 # Logs
 *.log
 
-# Images and assets
-assets/
-
 # Pre-commit
 .pre-commit-config.yaml
 .pre-commit-hooks.yaml
