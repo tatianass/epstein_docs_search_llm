@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Test, coverage, and build outputs
+htmlcov/
+.coverage
+.cache/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Images and assets
+assets/
+
+# Pre-commit
+.pre-commit-config.yaml
+.pre-commit-hooks.yaml
+
+# DB
+chromadb/
+*.sqlite3
+*.bin
+
+# Files
+pdfs/

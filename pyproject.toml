@@ -1,0 +1,43 @@
+[project]
+name = "epstein_docs_search_llm"
+version = "0.1.0"
+description = "A LLM project to search for queries in pdfs from the Epstein case that were released."
+authors = [
+	{ name = "Tatiana Saturno", email = "tatiana.silva@ccc.ufcg.edu.br" }
+]
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "langchain-community==0.4.1",
+	"langchain-text-splitters==1.1.1",
+	"langchain-huggingface==1.2.1",
+	"pypdf==6.7.5",
+	"sentence-transformers==5.2.3",
+	"chromadb==1.5.4",
+	"langchain-ollama==1.0.1"
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit==4.5.1", "black==26.3.0"]
+
+[tool.setuptools.packages.find]
+where = ["app"]
+include = ["app*"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "venv", ".venv"]
+
+[tool.coverage.run]
+branch = true
+source = ["app"]
+
+[tool.coverage.report]
+omit = ["tests/*", "venv/*", ".venv/*"]
+show_missing = true
+
+[tool.pytest.ini_options]
+addopts = "--maxfail=1 --disable-warnings -q"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
